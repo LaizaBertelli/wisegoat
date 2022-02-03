@@ -20,7 +20,8 @@ function removeMainPageElements() {
 function appendAdvice(advice) {
     const advContainer = document.querySelector('.advice-container');
     const p = document.createElement('p');
-    p.innerText = advice;
+    p.innerText = '"' + advice + '"';
+    p.classList.add('advice-text');
     advContainer.appendChild(p);
 }
 
@@ -28,6 +29,7 @@ async function handleClick() {
     removeMainPageElements();
     const response = await fetch(API_URL);
     const { slip } = await response.json();
+    console.log(slip)
     console.log(slip.advice);
 
     appendAdvice(slip.advice);
