@@ -24,10 +24,20 @@
 }
 
 .advice-container {
-    background-color: #f89ee99d;
-    width: 60%;
-    height: 300px;
+    display: flex;
+    background-color: #EBE4DF;
+    width: 70%;
+    height: 400px;
     margin-top: 110px;
+}
+
+.advice-text {
+    font-size: 2rem;
+    font-family: Roboto, 'sans-serif';
+    font-weight: 600;
+    color: #72005F;
+    padding: 60px;
+    width: 50%;
 }
 
 .header {
