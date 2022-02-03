@@ -1,0 +1,37 @@
+main {
+   display: flex;
+   justify-content: center;
+   align-items:flex-end;
+   color: #BAA193;
+   font-family: 'Roboto', 'sans-serif';
+   margin: 60px;
+}
+
+.header {
+    font-size: 3.8em;
+    line-height: 0.1em;
+    margin-bottom: 30px;
+}
+.header h1 {
+    color: #72005F;
+}
+
+#ask-advice-btn {
+    color: white;
+    background-color: #72005F;
+    font-weight: 600;
+    font-size: 0.5em;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    margin-top: 15px;
+}
+
+.goat-image {
+    width: 400px;
+    margin-left: 60px;
+}
+
+@media only screen {
+    
+}
