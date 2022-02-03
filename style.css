@@ -25,6 +25,7 @@
 
 .advice-container {
     display: flex;
+    /* flex-direction: row-reverse; */
     background-color: #EBE4DF;
     width: 70%;
     height: 400px;
@@ -36,8 +37,14 @@
     font-family: Roboto, 'sans-serif';
     font-weight: 600;
     color: #72005F;
-    padding: 60px;
+    padding: 55px;
     width: 50%;
+    margin: 0;
+}
+
+.advice img {
+    width: 100%;
+    height: 100%;
 }
 
 .header {
@@ -63,8 +70,4 @@
 .goat-image {
     width: 400px;
     margin-left: 60px;
-}
-
-@media only screen {
-    
 }
