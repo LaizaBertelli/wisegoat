@@ -12,7 +12,16 @@ function removeMainPageElements() {
     const imgContainer = document.querySelector('.image-container');
     const goatImg = document.querySelector('.goat-image');
     imgContainer.removeChild(goatImg);
+    imgContainer.classList.remove('image-container');
+    imgContainer.classList.add('advice-container')
     
+}
+
+function appendAdvice(advice) {
+    const advContainer = document.querySelector('.advice-container');
+    const p = document.createElement('p');
+    p.innerText = advice;
+    advContainer.appendChild(p);
 }
 
 async function handleClick() {
@@ -20,6 +29,8 @@ async function handleClick() {
     const response = await fetch(API_URL);
     const { slip } = await response.json();
     console.log(slip.advice);
+
+    appendAdvice(slip.advice);
 }
 
 askAdviceButton.addEventListener('click', handleClick);
